@@ -1,0 +1,31 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Net Effect of Controversies on Firm Sales}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{3}{c}{OLS}                                          &\multicolumn{1}{c}{WLS}\\\cmidrule(lr){2-4}\cmidrule(lr){5-5}
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\midrule
+News Count          &      -0.017\sym{*}  &                     &      -0.019\sym{*}  &      -0.025\sym{*}  \\
+                    &     (0.009)         &                     &     (0.010)         &     (0.014)         \\
+\addlinespace
+Scandal Dummy       &                     &      -0.026         &                     &                     \\
+                    &                     &     (0.019)         &                     &                     \\
+\addlinespace
+ESG Score           &       0.007\sym{***}&       0.006\sym{***}&       0.006\sym{***}&       0.007\sym{***}\\
+                    &     (0.001)         &     (0.001)         &     (0.001)         &     (0.001)         \\
+\addlinespace
+Other Controversies &       0.014\sym{***}&       0.010\sym{***}&       0.011\sym{***}&       0.009\sym{***}\\
+                    &     (0.003)         &     (0.002)         &     (0.002)         &     (0.003)         \\
+\midrule
+Firm FE             &         Yes         &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &                     &                     &                     \\
+Industry*Year FE    &                     &         Yes         &         Yes         &         Yes         \\
+N                   &       54967         &       54742         &       54742         &       54742         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Notes: Robust standard errors in parentheses, clustered at firm level}\\
+\multicolumn{5}{l}{\footnotesize Whole Sample (2001-2020)}\\
+\multicolumn{5}{l}{\footnotesize Weighted regressions use the number of firms within industries as weights.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

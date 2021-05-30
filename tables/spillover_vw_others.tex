@@ -1,0 +1,38 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Spillover Effects of Volkswagen Scandal vs Other Controversies}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\midrule
+News Count          &      -0.080\sym{*}  &      -0.072\sym{**} &      -0.035         &      -0.065\sym{*}  \\
+                    &     (0.043)         &     (0.035)         &     (0.025)         &     (0.038)         \\
+\addlinespace
+Same Country with VW&                     &      -0.008         &                     &       0.003         \\
+                    &                     &     (0.007)         &                     &     (0.012)         \\
+\addlinespace
+Same Country with Others&                     &       0.057         &                     &       0.056         \\
+                    &                     &     (0.043)         &                     &     (0.043)         \\
+\addlinespace
+Competitors of VW   &                     &                     &      -0.036         &      -0.034         \\
+                    &                     &                     &     (0.026)         &     (0.037)         \\
+\addlinespace
+Competitors of Others&                     &                     &       0.029         &       0.016         \\
+                    &                     &                     &     (0.030)         &     (0.032)         \\
+\addlinespace
+ESG Score           &       0.002         &       0.003         &       0.005         &       0.005         \\
+                    &     (0.002)         &     (0.003)         &     (0.004)         &     (0.004)         \\
+\addlinespace
+Other Controversies &       0.017         &       0.027\sym{*}  &       0.025\sym{*}  &       0.026\sym{*}  \\
+                    &     (0.011)         &     (0.016)         &     (0.015)         &     (0.016)         \\
+\midrule
+Firm FE             &         Yes         &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &         Yes         &         Yes         &         Yes         \\
+N                   &         324         &         315         &         279         &         279         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Notes: Robust standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Balanced Sample (2010-2018)}\\
+\multicolumn{5}{l}{\footnotesize Industry: Automobile and Light Duty Motor Vehicle Manufacturing}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

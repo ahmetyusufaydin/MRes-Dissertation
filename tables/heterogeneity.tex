@@ -1,0 +1,38 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Heterogeneity - Environmental Fragility Index}
+\begin{tabular}{l*{5}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
+                    &\multicolumn{1}{c}{OLS}&\multicolumn{1}{c}{WLS}&\multicolumn{1}{c}{OLS}&\multicolumn{1}{c}{OLS}&\multicolumn{1}{c}{OLS}\\
+\midrule
+News Count          &      -0.015\sym{**} &      -0.023\sym{**} &      -0.018         &      -0.018         &      -0.021         \\
+                    &     (0.008)         &     (0.010)         &     (0.012)         &     (0.013)         &     (0.013)         \\
+\addlinespace
+News Count*Fragility Index&      -0.029\sym{***}&      -0.026\sym{**} &      -0.018         &      -0.019         &      -0.026\sym{*}  \\
+                    &     (0.009)         &     (0.013)         &     (0.013)         &     (0.013)         &     (0.015)         \\
+\addlinespace
+Same Country        &                     &                     &                     &      -0.012         &      -0.018         \\
+                    &                     &                     &                     &     (0.019)         &     (0.023)         \\
+\addlinespace
+Same Country*Fragility Index&                     &                     &                     &      -0.016         &      -0.023         \\
+                    &                     &                     &                     &     (0.015)         &     (0.019)         \\
+\addlinespace
+Competitors         &                     &                     &                     &                     &       0.012         \\
+                    &                     &                     &                     &                     &     (0.016)         \\
+\addlinespace
+Competitors*Fragility Index&                     &                     &                     &                     &       0.021\sym{**} \\
+                    &                     &                     &                     &                     &     (0.010)         \\
+\midrule
+Controls            &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Firm FE             &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &                     &                     &                     &                     \\
+Industry*Year FE    &                     &         Yes         &         Yes         &         Yes         &         Yes         \\
+N                   &       11133         &       11133         &       11133         &       11016         &       10593         \\
+\bottomrule
+\multicolumn{6}{l}{\footnotesize Notes: Robust standard errors in parentheses, clustered at firm level}\\
+\multicolumn{6}{l}{\footnotesize Fragility indicies are standardized.}\\
+\multicolumn{6}{l}{\footnotesize WLS use the number of firms within industries as weights.}\\
+\multicolumn{6}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

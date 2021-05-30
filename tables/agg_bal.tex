@@ -1,0 +1,27 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Effect of controversies at industry level}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{2}{c}{WLS}                    &\multicolumn{2}{c}{OLS}                    \\\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\midrule
+News Count          &      -0.004         &      -0.003         &      -0.003         &      -0.003         \\
+                    &     (0.004)         &     (0.003)         &     (0.004)         &     (0.003)         \\
+\addlinespace
+Other Controversies &       0.001         &       0.001         &       0.001\sym{*}  &       0.001         \\
+                    &     (0.001)         &     (0.000)         &     (0.001)         &     (0.000)         \\
+\addlinespace
+Average ESG Score   &                     &       0.031\sym{***}&                     &       0.031\sym{***}\\
+                    &                     &     (0.006)         &                     &     (0.007)         \\
+\midrule
+Industry FE         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &         Yes         &         Yes         &         Yes         \\
+N                   &         540         &         540         &         540         &         540         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Notes: Robust standard errors in parentheses, clustered at industry level}\\
+\multicolumn{5}{l}{\footnotesize Balanced Sample (2010-2018)}\\
+\multicolumn{5}{l}{\footnotesize Revenues are aggregated after excluding firms involved in scandals.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

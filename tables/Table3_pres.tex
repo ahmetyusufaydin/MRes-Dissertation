@@ -1,0 +1,31 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Spillover Effects of Volkswagen Scandal}
+\begin{tabular}{l*{6}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         &\multicolumn{1}{c}{(6)}         \\
+\midrule
+News Count          &                     &      -0.051\sym{**} &                     &      -0.053\sym{*}  &                     &      -0.054\sym{**} \\
+                    &                     &     (0.024)         &                     &     (0.029)         &                     &     (0.027)         \\
+\addlinespace
+Same Country ($ T_{vt} C_{iv}$)&      -0.013\sym{**} &      -0.003         &                     &                     &      -0.006         &       0.002         \\
+                    &     (0.007)         &     (0.005)         &                     &                     &     (0.010)         &     (0.009)         \\
+\addlinespace
+Competitors ($ T_{vt} S_{iv}$)&                     &                     &      -0.020         &      -0.007         &      -0.015         &      -0.008         \\
+                    &                     &                     &     (0.019)         &     (0.021)         &     (0.024)         &     (0.025)         \\
+\addlinespace
+ESG Score           &       0.003         &       0.003         &       0.005         &       0.005         &       0.005         &       0.005         \\
+                    &     (0.003)         &     (0.003)         &     (0.004)         &     (0.004)         &     (0.004)         &     (0.004)         \\
+\addlinespace
+Other Controversies &       0.026         &       0.027\sym{*}  &       0.026         &       0.027\sym{*}  &       0.026         &       0.027\sym{*}  \\
+                    &     (0.016)         &     (0.016)         &     (0.016)         &     (0.016)         &     (0.016)         &     (0.016)         \\
+\midrule
+Firm FE             &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+N                   &         315         &         315         &         279         &         279         &         279         &         279         \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize Notes: Robust standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize Volkswagen is excluded in spillover regressions.}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

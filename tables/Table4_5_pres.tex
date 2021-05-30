@@ -1,0 +1,26 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Spillover Effects in Generalized Model}
+\begin{tabular}{l*{3}{c}}
+\toprule
+                    &\multicolumn{1}{c}{Auto}&\multicolumn{2}{c}{All Industries}         \\\cmidrule(lr){2-2}\cmidrule(lr){3-4}
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{OLS}&\multicolumn{1}{c}{OLS}&\multicolumn{1}{c}{WLS}\\
+\midrule
+News Count          &      -0.100\sym{*}  &      -0.021         &      -0.025\sym{*}  \\
+                    &     (0.051)         &     (0.013)         &     (0.014)         \\
+\addlinespace
+Same Country        &       0.016         &      -0.008         &       0.012         \\
+                    &     (0.011)         &     (0.018)         &     (0.012)         \\
+\addlinespace
+Competitors         &      -0.001         &       0.004         &      -0.015         \\
+                    &     (0.012)         &     (0.015)         &     (0.015)         \\
+\midrule
+Controls            &         Yes         &         Yes         &         Yes         \\
+Firm FE             &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &                     &                     \\
+Industry*Year FE    &                     &         Yes         &         Yes         \\
+N                   &         288         &       11322         &       11322         \\
+\bottomrule
+\end{tabular}
+\end{table}

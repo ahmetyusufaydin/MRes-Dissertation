@@ -1,0 +1,36 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Spillover Effects in Generalized Model: Big vs. Small Scandals}
+\begin{tabular}{l*{4}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\midrule
+News Count (Big)    &      -0.021\sym{*}  &      -0.025\sym{*}  &      -0.028\sym{*}  &      -0.023         \\
+                    &     (0.012)         &     (0.014)         &     (0.016)         &     (0.017)         \\
+\addlinespace
+News Count (Small)  &      -0.004         &      -0.003         &      -0.034\sym{*}  &      -0.027\sym{*}  \\
+                    &     (0.011)         &     (0.012)         &     (0.018)         &     (0.015)         \\
+\addlinespace
+Same Country (Big)  &                     &      -0.009         &                     &      -0.045         \\
+                    &                     &     (0.014)         &                     &     (0.033)         \\
+\addlinespace
+Same Country (Small)&                     &       0.000         &                     &       0.022\sym{*}  \\
+                    &                     &     (0.008)         &                     &     (0.011)         \\
+\addlinespace
+Competitors (Big)   &                     &                     &       0.027         &       0.047\sym{*}  \\
+                    &                     &                     &     (0.018)         &     (0.028)         \\
+\addlinespace
+Competitors (Small) &                     &                     &      -0.050         &      -0.065\sym{**} \\
+                    &                     &                     &     (0.030)         &     (0.031)         \\
+\midrule
+Controls            &         Yes         &         Yes         &         Yes         &         Yes         \\
+Firm FE             &         Yes         &         Yes         &         Yes         &         Yes         \\
+Industry*Year FE    &         Yes         &         Yes         &         Yes         &         Yes         \\
+N                   &       16146         &       16002         &       11007         &       11007         \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize Notes: Robust standard errors in parentheses, clustered at firm level}\\
+\multicolumn{5}{l}{\footnotesize Balanced Sample (2010-2018)}\\
+\multicolumn{5}{l}{\footnotesize Controls are ESG score and other controversies.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

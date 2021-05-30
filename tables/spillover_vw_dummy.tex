@@ -1,0 +1,33 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Spillover Effects of Volkswagen Scandal (with scandal dummy)}
+\begin{tabular}{l*{6}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         &\multicolumn{1}{c}{(6)}         \\
+\midrule
+News Count          &                     &      -0.051\sym{**} &                     &      -0.056\sym{**} &                     &      -0.056\sym{**} \\
+                    &                     &     (0.025)         &                     &     (0.028)         &                     &     (0.027)         \\
+\addlinespace
+Same Country ($ D_{vt} C_{iv}$)&      -0.150\sym{**} &      -0.040         &                     &                     &      -0.110         &      -0.014         \\
+                    &     (0.074)         &     (0.057)         &                     &                     &     (0.128)         &     (0.109)         \\
+\addlinespace
+Competitors ($ D_{vt} S_{iv}$)&                     &                     &      -0.139         &       0.004         &      -0.055         &       0.013         \\
+                    &                     &                     &     (0.217)         &     (0.244)         &     (0.291)         &     (0.302)         \\
+\addlinespace
+ESG Score           &       0.003         &       0.003         &       0.005         &       0.006         &       0.006         &       0.006         \\
+                    &     (0.003)         &     (0.003)         &     (0.004)         &     (0.004)         &     (0.004)         &     (0.004)         \\
+\addlinespace
+Other Controversies &       0.025         &       0.027\sym{*}  &       0.025         &       0.026\sym{*}  &       0.025         &       0.026\sym{*}  \\
+                    &     (0.016)         &     (0.016)         &     (0.016)         &     (0.016)         &     (0.016)         &     (0.016)         \\
+\midrule
+Firm FE             &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Year FE             &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+N                   &         315         &         315         &         279         &         279         &         279         &         279         \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize Notes: Robust standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize Balanced Sample (2010-2018) for Automobile and Light Duty Motor Vehicle Manufacturing Industry}\\
+\multicolumn{7}{l}{\footnotesize Volkswagen is excluded in spillover regressions.}\\
+\multicolumn{7}{l}{\footnotesize 4 firms have missing similarity index since they do not have revenue distribution data.}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
